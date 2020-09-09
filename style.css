@@ -13,6 +13,7 @@ h3 {
     font-size: 3em;;
     text-align: center;
     align-self: top;
+    padding: 17px 0;
 }
 
 form {
@@ -27,7 +28,7 @@ input {
 }
 
 iframe {
-    display: block;
+    height: 80px;
 }
 
 .body {
@@ -58,8 +59,8 @@ iframe {
 }
 
 .card {
-    height: 150px;
-    width: 15%;
+    height: 300px;
+    width: 250px;
     background-color: slateblue;
 }
 
@@ -74,8 +75,25 @@ iframe {
     display: flex;
     flex-direction: column;
     background-color: springgreen;
+    margin-bottom: 10px;
+    border-radius: 5px;
 }
 
 .links {
-    justify-content: center;
+    display: flex;
+    padding: 0 6%;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.left, .right {
+    max-width: 46%;
+}
+
+.songDesc {
+    padding: 5px 0 20px 0;
+}
+
+.hidden {
+    display: none;
 }
