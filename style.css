@@ -43,7 +43,7 @@ iframe {
     display: flex;
 }
 
-.search {
+.searchBar {
     height: 80px;
     background-color: royalblue;
     display: flex;
@@ -90,10 +90,30 @@ iframe {
     max-width: 46%;
 }
 
-.songDesc {
-    padding: 5px 0 20px 0;
+.tab{
+    display: flex;
+    flex-direction: row;
+}
+
+.tabLink {
+    flex-grow: 1;
+    box-sizing: border-box;
+    margin: 0;
+    border: none;
+    height: 20px;
+    background-color: lightblue;
+}
+
+.tabLink.active {
+    background-color: lightcoral;
 }
 
 .hidden {
     display: none;
+}
+
+.searchSticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }

@@ -1,17 +1,33 @@
+//Get the searchbar
+let searchBar = document.getElementsByClassName("search");
+//Execute function when user scrolls the page
+window.onscroll = checkSticky();
+console.log(searchBar);
+
+function checkSticky (){  
+    console.log("Cheacking!"); 
+    let searchBarOffset = searchBar.offsetTop;
+    if (window.pageYOffset >= searchBarOffset){
+        searchBar.classList.add("searchSticky");
+    } else {
+        searchBar.classList.remove("searchSticky");
+    }
+};
+    
+
 function selectComment (evt, commentId) {
     //Declare variables
-    let i, tabContent, tabLink, id;
+    let tabContent, tabLink, id;
 
     //Get all elements with class tabcontent and hide them
     tabContent = document.getElementsByClassName("tabContent");
-    for (i = 0; i < tabContent.length; i++){
+    for (let i = 0; i < tabContent.length; i++){
         tabContent[i].classList.add("hidden");
     };
 
-    //Get all elements with class tabLink
+    //Get all elements with class tabLink and deactivate them
     tabLink = document.getElementsByClassName("tabLink");
-    console.log(tabLink);
-    for (i = 0; tabLink.length; i++) {
+    for (let i = 0; i < tabLink.length; i++) {
         tabLink[i].classList.remove("active");
     };
 
