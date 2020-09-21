@@ -10,7 +10,7 @@ h1 {
 }
 
 h3 {
-    font-size: 3em;;
+    font-size: 3em;
     text-align: center;
     align-self: top;
     padding: 17px 0;
@@ -32,8 +32,8 @@ iframe {
 }
 
 .body {
-    height: 100vh;
     background-color: rgb(146, 190, 190);
+    height: auto;
 }
 
 .banner {
@@ -49,12 +49,17 @@ iframe {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    align-self: flex-start;
+    top: 0;
 }
 
 .content {
     padding: 20px 15% 0 15%;
     display: flex;
     justify-content: center;
+    height: auto;
     
 }
 
@@ -62,6 +67,9 @@ iframe {
     height: 300px;
     width: 250px;
     background-color: slateblue;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 100px;
 }
 
 .posts {
@@ -110,10 +118,4 @@ iframe {
 
 .hidden {
     display: none;
-}
-
-.searchSticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
 }

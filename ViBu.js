@@ -1,20 +1,4 @@
 
-//Get the searchbar
-let searchBar = document.getElementsByClassName("search");
-//Execute function when user scrolls the page
-window.onscroll = checkSticky();
-console.log(searchBar);
-
-function checkSticky (){  
-    console.log("Cheacking!"); 
-    let searchBarOffset = searchBar.offsetTop;
-    if (window.pageYOffset >= searchBarOffset){
-        searchBar.classList.add("searchSticky");
-    } else {
-        searchBar.classList.remove("searchSticky");
-    }
-};
-    
 
 function selectComment (evt, tabNum, postNum, user) {
     //Declare variables
