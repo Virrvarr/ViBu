@@ -16,15 +16,11 @@ h3 {
     padding: 17px 0;
 }
 
-form {
-    display: flex;
-    height: 25px;
-    background-color: salmon;
-}
-
 input {
     display: flex;
     border: none;
+    height: 25px;
+    width: 300px;
 }
 
 iframe {
@@ -38,9 +34,17 @@ img {
     border-radius: 50%;
 }
 
+a:link, a:visited{
+    color:white;
+}
+
+a:hover {
+    color: red;
+    transition: .2s;
+}
+
 .body {
     background-color: rgb(146, 190, 190);
-    height: 5000px;
 }
 
 .banner {
@@ -65,9 +69,7 @@ img {
 .content {
     padding: 20px 10% 0 10%;
     display: flex;
-    justify-content: center;
-    height: 4000px;
-    
+    justify-content: center;  
 }
 
 .card {
@@ -88,7 +90,7 @@ img {
 
 .posts {
     margin: 0 15px 15px 15px;
-    height: 100vh;
+    min-height: calc(100vh - 250px - 80px - 20px - 15px);
     width: 65%;
     max-width: 800px;
     background-color: rgb(41, 39, 54);
@@ -140,4 +142,10 @@ img {
     box-shadow: -40px 0 black;
     position: absolute;
     left: 70px;
+}
+
+#bubbImg {
+    box-shadow: 40px 0 black;
+    position: absolute;
+    right: 70px;
 }

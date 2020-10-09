@@ -1,4 +1,16 @@
+const searchBar = document.getElementById("searchBar");
+const posts = document.getElementsByClassName("post");
 
+console.log(posts);
+
+for (post in posts){
+    console.log(post.children[1].textcontent);
+};
+
+searchBar.addEventListener('keyup', (evt)=> {
+    let searchString = evt.target.value.toLowerCase();
+    console.log(searchString)
+})
 
 function selectComment (evt, tabNum, postNum, user) {
     //Declare variables
