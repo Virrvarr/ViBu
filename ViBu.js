@@ -1,15 +1,38 @@
 const searchBar = document.getElementById("searchBar");
 const posts = document.getElementsByClassName("post");
+const postSearchString = [];
 
 console.log(posts);
 
-for (post in posts){
-    console.log(post.children[1].textcontent);
+//Create an array of objects that links post number with the searchable textcontent in the post.
+//My thought behind this is that I'll only have to do this once per load, instead of everytime the search changes.
+for (let i = 0; i < posts.length; i++){
+    //Create the string with the post title included
+    let postString = posts[i].children[0].textContent;
+    //Add the text content of the tabs excluding "Description"
+    for (let j = 1; j < posts[i].children[2].children.length; j++){
+        postString += posts[i].children[2].children[j].textContent;
+    }
+    //Push the object into postSearchString
+    postSearchString.push({nr: i, string: postString.toLowerCase()});
 };
 
+console.log(postSearchString);
+
 searchBar.addEventListener('keyup', (evt)=> {
+    //Show all posts
+    for (let post of posts){
+        post.classList.remove("hidden")
+    }
+    //Get the search string
     let searchString = evt.target.value.toLowerCase();
-    console.log(searchString)
+
+    //Hide all posts that don't contain the search 
+    for (let pair of postSearchString){
+        if (!pair.string.includes(searchString)){
+            posts[pair.nr].classList.add("hidden");
+        }
+    }
 })
 
 function selectComment (evt, tabNum, postNum, user) {
