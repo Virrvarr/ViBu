@@ -44,19 +44,19 @@ a:hover {
 }
 
 .body {
-    background-color: rgb(146, 190, 190);
+    background-color: #090D1C;
 }
 
 .banner {
     height: 250px;
-    background-color: white;
+    background-color: #585C65;
     justify-content: center;
     display: flex;
 }
 
 .searchBar {
     height: 80px;
-    background-color: royalblue;
+    background-color: #585C65;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,32 +76,28 @@ a:hover {
     display: block;
     height: 300px;
     width: 250px;
-    background-color: slateblue;
     position: -webkit-sticky;
     position: sticky;
     top: 100px;
 }
 
 .cardText {
-    position: relative;
-    top: 160px;
     text-align: center;
+    color: white;
 }
 
 .posts {
     margin: 0 15px 15px 15px;
     min-height: calc(100vh - 250px - 80px - 20px - 15px);
     width: 65%;
-    max-width: 800px;
-    background-color: rgb(41, 39, 54);
-    
+    max-width: 800px; 
 }
 
 .post {
     display: flex;
     flex-direction: column;
-    background-color: springgreen;
-    margin-bottom: 10px;
+    background-color: #6C6F81;
+    margin-bottom: 20px;
     border-radius: 5px;
 }
 
@@ -110,6 +106,7 @@ a:hover {
     padding: 0 6%;
     justify-content: space-between;
     flex-direction: row;
+    
 }
 
 .left, .right {
@@ -119,6 +116,7 @@ a:hover {
 .tab{
     display: flex;
     flex-direction: row;
+    
 }
 
 .tabLink {
@@ -127,25 +125,53 @@ a:hover {
     margin: 0;
     border: none;
     height: 20px;
-    background-color: lightblue;
+    background-color: rgb(34, 43, 68);
+    color: white;
 }
 
 .tabLink.active {
-    background-color: lightcoral;
+    background-color: rgb(39, 92, 122);
 }
+
+.tabLink:hover{
+    background-color: rgb(39, 92, 122);
+    transition: .15s;
+}
+
+.tabContent {
+    padding: 10px 25px;
+    background-color: rgb(39, 92, 122);
+    border-radius:0 0 5px 5px;
+}
+
+
 
 .hidden {
     display: none;
 }
 
 #luminiImg {
-    box-shadow: -40px 0 black;
+    box-shadow: -40px 0 rgb(12, 107, 124);
     position: absolute;
-    left: 70px;
+    right: 20px;
+}
+
+#luminiText {
+    position: absolute;
+    top: 160px;
+    right: 20px;
+    width: 190px;
 }
 
 #bubbImg {
-    box-shadow: 40px 0 black;
+    box-shadow: 40px 0 rgb(12, 107, 124);
     position: absolute;
-    right: 70px;
+    left: 20px;
+}
+
+#bubbText {
+    position: absolute;
+    top: 160px;
+    left: 20px;
+    width: 190px;
 }
