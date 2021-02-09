@@ -21,6 +21,8 @@ input {
     border: none;
     height: 25px;
     width: 300px;
+    text-align: center;
+    
 }
 
 iframe {
@@ -101,17 +103,70 @@ a:hover {
     border-radius: 5px;
 }
 
-.links {
+/* .links {
     display: flex;
     padding: 0 6%;
     justify-content: space-between;
     flex-direction: row;
     
+} */
+
+.linkWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    padding: 0 25px;
+    column-gap: 25px;
 }
 
-.left, .right {
-    max-width: 46%;
+.linkOne {
+    grid-column-start: 1;
+    grid-column-end: 2;
 }
+
+.linkTwo {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.linkThree {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.linkFour {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.linkFive {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.linkSix {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.guestProfile {
+    grid-template-columns: 166px 1fr;
+}
+
+.guestProfileImg {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.guestProfileBody {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+/* Kanske ska bort */
+/* .left, .right {
+    max-width: 46%;
+} */
 
 .tab{
     display: flex;
@@ -121,6 +176,7 @@ a:hover {
 
 .tabLink {
     flex-grow: 1;
+    flex-basis: 0;
     box-sizing: border-box;
     margin: 0;
     border: none;
@@ -174,4 +230,9 @@ a:hover {
     top: 160px;
     left: 20px;
     width: 190px;
+}
+
+#info {
+    background-color: transparent;
+    color: rgb(196, 21, 21);
 }
