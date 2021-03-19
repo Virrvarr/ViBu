@@ -9,19 +9,20 @@
 </head>
 <body>
     <div class="body">
-
-        <div class="banner">
-            <h1>ViBu</h1>
+        <div class="searchBanner">
+            <div class="banner">
+                <h1>ViBu</h1>
+            </div>
+            <div class="searchBar sticky">
+                <input type="search" name="" id="searchBar" placeholder="Search for number, title or artist">
+            </div>
         </div>
-        <div class="searchBar sticky">
-            <input type="search" name="" id="searchBar" placeholder="Search for number, title or artist">
-        </div>
-        
+            
         <div class="content">
 
             <div class="card" id="vi">
                 <div class="circles">
-                    <img id="luminiImg" src="assets/lumini.png" alt="">
+                    <img id="luminiImg" class="cardImage" src="assets/lumini.png" alt="">
                 </div>
                 <div class="cardText" id="luminiText">
                     <h2>Lumini</h2>
@@ -121,6 +122,13 @@
 
                         <div class="linkFour guestProfile">
                             <img class="guestProfileImg" src="assets/lumini.png" alt="">
+                            <div class="guestProfileBody">
+                                <h4 class="guestName">Bob</h4>
+                                <p class="guestLinks">
+                                    <a href="https://www.youtube.com/channel/UCt9Y_cToptzPBslzfjpQN6g"><i class="fab fa-youtube"></i></a>
+                                    <a href="https://soundcloud.com/lumini-3"><i class="fab fa-soundcloud"></i></a>
+                                </p>
+                            </div>
                         </div>
                     </div>
 
@@ -368,7 +376,7 @@
             
             <div class="card" id="bu">
                 <div class="circles">
-                    <img id="bubbImg" src="assets/bubb.jpg" alt="">
+                    <img id="bubbImg" class="cardImage" src="assets/bubb.jpg" alt="">
                 </div>
                 <div class="cardText" id="bubbText">
                     <h2>Bubb</h2>
