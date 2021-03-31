@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
@@ -47,21 +48,16 @@ a:hover {
     background-color: #090D1C;
 }
 
-.searchBanner {
-    background-image: url("assets/test_vibu.png");
-    object-fit: cover;
-}
-
 .banner {
     height: 250px;
-
+    background-image: url("assets/vibu_bla_forslag_250.png");
     justify-content: center;
     display: flex;
 }
 
 .searchBar {
     height: 80px;
-
+    background-image: url("assets/vibu_bla_forslag_80.png");
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,7 +79,8 @@ a:hover {
     width: 250px;
     position: -webkit-sticky;
     position: sticky;
-    top: 100px;
+    top: 140px;
+    margin: 45px 35px 0 35px;
 }
 
 .cardImage {
@@ -123,10 +120,9 @@ a:hover {
 
 .linkWrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 25px 1fr;
     grid-template-rows: auto;
     padding: 0 25px;
-    column-gap: 25px;
     row-gap: 10px;
 }
 
@@ -136,8 +132,8 @@ a:hover {
 }
 
 .linkTwo {
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
 }
 
 .linkThree {
@@ -146,8 +142,8 @@ a:hover {
 }
 
 .linkFour {
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
 }
 
 .linkFive {
@@ -156,8 +152,23 @@ a:hover {
 }
 
 .linkSix {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.gapLine {
     grid-column-start: 2;
     grid-column-end: 3;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.gapLine p {
+    text-align: center;
+    font-size: 2em;
+    padding-top: 20px;
+    font-weight: 800;
 }
 
 .guestProfile {
@@ -210,9 +221,10 @@ a:hover {
     box-sizing: border-box;
     margin: 0;
     border: none;
-    height: 20px;
+    height: 30px;
     background-color: rgb(50, 67, 112);
     color: white;
+    font-weight: 800;
 }
 
 .tabLink.active {
@@ -229,6 +241,8 @@ a:hover {
     background-color: rgb(64, 116, 146);
     border-radius:0 0 5px 5px;
     color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .8em;
 }
 
 
@@ -238,9 +252,10 @@ a:hover {
 }
 
 #luminiImg {
-    box-shadow: -40px 0 rgb(12, 107, 124);
+    box-shadow: -40px 0 rgb(13, 59, 128);
     position: absolute;
     right: 20px;
+
 }
 
 #luminiText {
@@ -248,10 +263,11 @@ a:hover {
     top: 160px;
     right: 20px;
     width: 190px;
+    font-weight: 800;
 }
 
 #bubbImg {
-    box-shadow: 40px 0 rgb(12, 107, 124);
+    box-shadow: 40px 0 rgb(13, 59, 128);
     position: absolute;
     left: 20px;
 }
@@ -265,5 +281,7 @@ a:hover {
 
 #info {
     background-color: transparent;
-    color: rgb(196, 21, 21);
+    font-size: 1.2em;
+    padding-bottom: 50px;
+    padding-top: 40px;
 }
