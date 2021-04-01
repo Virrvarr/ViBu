@@ -51,6 +51,8 @@ a:hover {
 .banner {
     height: 250px;
     background-image: url("assets/vibu_bla_forslag_250.png");
+    background-position: center;
+    background-repeat: no-repeat;
     justify-content: center;
     display: flex;
 }
@@ -58,6 +60,8 @@ a:hover {
 .searchBar {
     height: 80px;
     background-image: url("assets/vibu_bla_forslag_80.png");
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,7 +80,7 @@ a:hover {
 .card {
     display: block;
     height: 300px;
-    width: 250px;
+    width: 150px;
     position: -webkit-sticky;
     position: sticky;
     top: 140px;
@@ -97,7 +101,7 @@ a:hover {
 .posts {
     margin: 0 15px 15px 15px;
     min-height: calc(100vh - 250px - 80px - 20px - 15px);
-    width: 65%;
+    width: 75%;
     max-width: 800px; 
 }
 
@@ -242,7 +246,7 @@ a:hover {
     border-radius:0 0 5px 5px;
     color: black;
     font-family: 'Montserrat', sans-serif;
-    font-size: .8em;
+    font-size: .9em;
 }
 
 
@@ -284,4 +288,97 @@ a:hover {
     font-size: 1.2em;
     padding-bottom: 50px;
     padding-top: 40px;
+}
+
+@media screen and (max-width: 1550px){
+    .guestName {
+        font-size: 1.5rem;
+    }
+    
+}
+
+@media screen and (max-width: 1100px){
+    .card{
+        display: none;
+    }
+
+    .posts {
+        margin: 0 5px 15px 5px;
+        width: 85%; 
+    }
+
+    #info {
+        font-size: 1em;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    .content {
+        padding: 0px 2% 0 2%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .posts {
+        margin: 0 10px 15px 10px;
+        width: 100%; 
+    }
+
+    .guestName {
+        font-size: 1rem;
+    }
+
+    h3 {
+        font-size: 2.5em;
+    }
+
+    .tabLink {
+        font-size: .75em;
+    }
+
+    .tabContent {
+        font-size: .8em;
+    }
+
+    #info {
+        font-size: .9em;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+    .posts {
+        margin: 0 5px 15px 5px;
+        width: 100%; 
+    }
+
+    #info {
+        font-size: .7em;
+        padding-bottom: 5px;
+        padding-top: 20px;
+    }
+
+    .linkWrapper {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .guestName {
+        display: none;
+    }
+
+    .guestLinks {
+        padding-top: 5px;
+        letter-spacing: 1px;
+
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        font-size: 1.2em;
+    }
+
+    .tabLink {
+        font-size: .65em;
+    }
 }

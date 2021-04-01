@@ -7,14 +7,22 @@ console.log(posts);
 //Create an array of objects that links post number with the searchable textcontent in the post.
 //My thought behind this is that I'll only have to do this once per load, instead of everytime the search changes.
 for (let i = 0; i < posts.length; i++){
-    //Create the string with the post title included
-    let postString = posts[i].children[0].textContent;
-    //Add the text content of the tabs excluding "Description"
-    for (let j = 1; j < posts[i].children[2].children.length; j++){
-        postString += posts[i].children[2].children[j].textContent;
+    //Create the string
+    let postString = "";
+
+    //Chack if it's the info post and leave the string empty in that case
+    if (posts[i].id==="info"){
+        postSearchString.push({nr: i, string: postString.toLowerCase()});
+    } else {   
+        //Add the post title
+        postString += posts[i].children[0].textContent;
+        //Add the text content of the tabs excluding "Description"
+        for (let j = 1; j < posts[i].children[2].children.length; j++){
+            postString += posts[i].children[2].children[j].textContent;
+        }
+        //Push the object into postSearchString
+        postSearchString.push({nr: i, string: postString.toLowerCase()});
     }
-    //Push the object into postSearchString
-    postSearchString.push({nr: i, string: postString.toLowerCase()});
 };
 
 console.log(postSearchString);
