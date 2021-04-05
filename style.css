@@ -371,7 +371,6 @@ a:hover {
     .guestLinks {
         padding-top: 5px;
         letter-spacing: 1px;
-
         display: flex;
         flex-direction: column;
         text-align: left;
@@ -380,5 +379,9 @@ a:hover {
 
     .tabLink {
         font-size: .65em;
+    }
+
+    .tabContent {
+        font-size: .7em;
     }
 }
