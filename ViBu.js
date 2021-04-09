@@ -13,6 +13,13 @@ for (let i = 0; i < posts.length; i++){
     //Chack if it's the info post and leave the string empty in that case
     if (posts[i].id==="info"){
         postSearchString.push({nr: i, string: postString.toLowerCase()});
+
+    } else if (posts[i].classList.contains("completed")) {    
+        postString += "completed";
+        //Add the post title
+        postString += posts[i].children[0].textContent;
+        //Push the object into postSearchString
+        postSearchString.push({nr: i, string: postString.toLowerCase()});
     } else {   
         //Add the post title
         postString += posts[i].children[0].textContent;
