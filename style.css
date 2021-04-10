@@ -133,31 +133,37 @@ a:hover {
 .linkOne {
     grid-column-start: 1;
     grid-column-end: 2;
+    min-width: 0;
 }
 
 .linkTwo {
     grid-column-start: 3;
     grid-column-end: 4;
+    min-width: 0;
 }
 
 .linkThree {
     grid-column-start: 1;
     grid-column-end: 2;
+    min-width: 0;
 }
 
 .linkFour {
     grid-column-start: 3;
     grid-column-end: 4;
+    min-width: 0;
 }
 
 .linkFive {
     grid-column-start: 1;
     grid-column-end: 2;
+    min-width: 0;
 }
 
 .linkSix {
     grid-column-start: 3;
     grid-column-end: 4;
+    min-width: 0;
 }
 
 .gapLine {
@@ -240,6 +246,11 @@ a:hover {
     transition: .15s;
 }
 
+.tabLink:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
 .tabContent {
     padding: 10px 25px;
     background-color: rgb(64, 116, 146);
@@ -248,8 +259,6 @@ a:hover {
     font-family: 'Montserrat', sans-serif;
     font-size: .9em;
 }
-
-
 
 .hidden {
     display: none;
